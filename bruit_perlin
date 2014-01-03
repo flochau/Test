@@ -1,0 +1,15 @@
+float noise1D, x, xOff;
+
+void setup()
+{
+  size(500, 500, P2D);
+  x = 10;
+  xOff = 0.5;
+}
+
+void draw()
+{ 
+  noise1D = noise(x);
+  x += xOff;
+  println(noise1D);
+}
